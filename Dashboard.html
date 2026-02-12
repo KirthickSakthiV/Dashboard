@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>🏏 Cricket Dashboard</h2>
+        <ul>
+            <li onclick="showSection('home')">Home</li>
+            <li onclick="showSection('overview')">Overview</li>
+            <li onclick="showSection('winners')">Winners</li>
+            <li onclick="showSection('about')">About</li>
+            <li onclick="showSection('settings')">Settings</li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="active">
+        <div class="card">
+            <h1>Welcome to Cricket World</h1>
+            <p>Live Scores | Player Stats | Match Updates</p>
+        </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+        <div class="card">
+            <h1>Match Overview</h1>
+            <p>India vs Australia</p>
+            <p>IND: 287/6 (50 Overs)</p>
+            <p>AUS: 277/6 (50 Overs)</p>
+            <p>India Won By 10 runs</p>
+            <p>Top Scorer: Virat Kohli - 89 Runs</p>
+        </div>
+    </section>
+
+    <!-- WINNERS -->
+    <section id="winners">
+        <div class="card">
+            <h1>Series Winners</h1>
+            <ul>
+                <li>2019 - India</li>
+                <li>2022 - Australia</li>
+                <li>2024 - England</li>
+                <li>2026 - India</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="card">
+            <h1>About This Website</h1>
+            <p>This cricket dashboard shows match details, stats, and winners list.</p>
+        </div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section id="settings">
+        <div class="card">
+            <h1>Settings</h1>
+            <button onclick="changeTheme()">Change Theme</button>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
